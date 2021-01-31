@@ -12,7 +12,7 @@ let myInit = {
     cache: 'default' 
 };
 
-fetch('https://www.wikiart.org/en/api/2/PaintingSearch?term=Abaporu', myInit)
+fetch('https://www.wikiart.org/en/api/2/PaintingSearch?term=Abaporu&authSessionKey=ba5e4f69d898', myInit)
     .then(response => {return response.json()})
     .then((result) => {
         console.log(result)
