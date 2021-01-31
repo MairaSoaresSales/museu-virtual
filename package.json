@@ -1,19 +1,27 @@
 {
-  "name": "midterm-hackaton",
-  "version": "1.0.0",
-  "description": "laboratoria midterm hackaton 2021",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anaclara-gf/SAP005-midterm-hackaton.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/anaclara-gf/SAP005-midterm-hackaton/issues"
-  },
-  "homepage": "https://github.com/anaclara-gf/SAP005-midterm-hackaton#readme"
+    "name": "museu-app",
+    "version": "1.0.0",
+    "main": "src/index.html",
+    "license": "MIT",
+    "scripts": {
+        "htmlhint": "htmlhint src/*.html test/*.html",
+        "eslint": "eslint --ext .js src/ test/",
+        "pretest": "npm run eslint && npm run htmlhint",
+        "test": "jest --verbose --coverage",
+        "open-coverage-report": "opener ./coverage/lcov-report/index.html",
+        "start": "serve ./src",
+        "deploy": "gh-pages -d src"
+    },
+    "dependencies": {
+        "@babel/core": "^7.6.2",
+        "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+        "babel-jest": "^24.9.0",
+        "cors": "^2.8.5",
+        "eslint": "^5.9.0",
+        "gh-pages": "^2.1.1",
+        "htmlhint": "^0.11.0",
+        "jest": "^24.9.0",
+        "opener": "^1.5.1",
+        "serve": "^11.0.0"
+    }
 }
