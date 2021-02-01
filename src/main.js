@@ -1,20 +1,11 @@
-let myHeaders = new Headers({
-    'Accept': '*/*',
-    'Accept-Language': '*',
-    'Content-Language': '*',
-    'Content-Type': 'text/plain'
-});
+const url = `https://www.wikiart.org/en/api/2/PaintingSearch?term=Abaporu&authSessionKey=ba5e4f69d898`;
 
-let myInit = { 
-    method: 'GET',
-    headers: myHeaders,
-    mode: 'no-cors',
-    cache: 'default' 
-};
+// const myList = document.querySelector('ul');
 
-fetch('https://www.wikiart.org/en/api/2/PaintingSearch?term=Abaporu&authSessionKey=ba5e4f69d898', myInit)
-    .then(response => {return response.json()})
-    .then((result) => {
-        console.log(result)
-    })
-
+fetch(url)
+    .then(response => response.json())
+    .then(json => {
+        console.log(json)
+        }
+    )
+.catch(console.error);
