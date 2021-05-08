@@ -1,33 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museu</title>
-    <link rel="stylesheet" href="style.css"/>
-    
-  </head>
 
-  <body>
-    <div id="root">
-        <header class="header">
-          <div class="logo">
-            <img alt="Logo" src=".\images\logo-lab.png" class="logo-img" />
-            <p>Sair</p>
-          </div>
-        </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-pag-inicial.css" />
+  <link rel="stylesheet" href="style-pag-exposicao.css" />
+  <link rel="stylesheet" href="style-pag-bilhete.css" />
+  <link rel="stylesheet" href="style-pag-quiz.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Chilanka&display=swap" rel="stylesheet">
 
-        <section class="tela-inicial">
-          <main>
-            
-          </main>
+</head>
+
+<body>
+  <div class="root">
+    <header class="header">
+      <button class="voltar-button none" id="voltar-button"><img alt="Voltar" src=".\images\back.png" class="voltar-img" /></button>
+      <button class="logo-button" id="logo-button"><img alt="Logo" src=".\images\logo.png" class="logo-img" /></button>
+      <button class="sair-button none" id="sair-button"><img alt="Sair" src=".\images\sair.png" class="sair-img" /></button>
+    </header>
+
+    <section class="tela-inicial" id="tela-inicial">
+      <main>
+        <form class="form-pag-inicial" id="form-pag-inicial">
+          <input class="input-nome" id="input-nome" type="text" name="nome"
+            placeholder="Escreva seu nome para começar :)" />
+          <button class="button-input-nome" id="button-input-nome">INICIAR TOUR</button>
+        </form>
+      </main>
+    </section>
+
+    <section class="tela-exposicao none" id="tela-exposicao">
+      <main>
+        <section class="exposicao-header">
+          <p id="header-nome-usuario"></p>
+          <p>Preste bem atenção na exposição <br><b>"ESSE É O MEU BRASIL"!</b></p>
+          <p>No fim da tour testaremos seus conhecimentos com um <b>SUPER QUIZ!</b></p>
         </section>
+        <ul class="obras" id="lista-obras"></ul>
+        <section class="exposicao-button">
+          <p>Parabéns, você terminou a exposição!</p>
+          <p>Seu ticket está sendo criado...</p>
+          <button class="button-pag-ticket" id="button-pag-ticket">Clique aqui para retirar</button>
+        </section>
+      </main>
+    </section>
 
-        <footer>
-        </footer>
-    </div>
+    <section class="tela-bilhete-prateado none" id="tela-bilhete-prateado">
+      <main>
+        <section class="bilhete-prateado">
+          <img src="./images/bilhete-prateado.png" alt="bilhete-prateado" class="bilhete-img" />
+          <p class="texto-bilhete-prateado">Agora vamos atrás do bilhete <b class="dourado">dourado!</b></p>
+          <p class="texto-bilhete-prateado-italico"><i><u>Não esqueça</u> de printar seu ticket antes de seguir!</i></p>
+          <button id="button-iniciar-quiz" class="button-iniciar-quiz"><b>INICIAR QUIZ</b></button>
+        </section>
+      </main>
+    </section>
 
-    <script src="main.js" type="module"></script>
-  
-  </body>
+    <section class="tela-quiz none" id="tela-quiz">
+      <main>
+        <div id='div1' class='div1'></div>
+        <div id='div2' class='div2'></div>
+        <div id='div3' class='div3'></div>
+        <div id='div4' class='div4'></div>
+      </main>
+    </section>
+
+    <section id="tela-bilhete-dourado" class="tela-bilhete-dourado none">
+      <main>
+        <section class="bilhete-dourado">
+          <p class="texto-bilhete-dourado"><b>VOCÊ CONCLUIU O QUIZ!</b></p>
+          <p class="texto-bilhete-dourado">Printe seu segundo bilhete e compartilhe a experiência com seus amigos!</p>
+          <p class="texto-bilhete-dourado"><i>Não esqueça de convidá-los para jogar também!</i></p>
+          <img src="./images/bilhete-dourado.png" alt="bilhete-dourado" class="bilhete-dourado-img" />
+          <p class="bilhete-dourado-volte-sempre"><b>Volte Sempre!</b></p>
+        </section>
+      </main> 
+    </section>
+
+      <footer class="footer">
+        <p>Projeto desenvolvido por: Ana Clara, Camila, Karine, Mairã, Priscila e Rebeca.</p>
+      </footer>
+  </div>
+
+  <script src="main.js" type="module"></script>
+  <script src="quiz.js" type="module"></script>
+  <script src="page-routes.js"></script>
+
+</body>
+
 </html>
