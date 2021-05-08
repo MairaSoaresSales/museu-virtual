@@ -2,7 +2,7 @@
 
 Projeto desenvolvido durante o Midterm Hackton do Bootcamp da Laboratória. Nesse projeto, o mais importante era aprender sobre o consumo de APIs.
 
-[**Conheça o Museu Virtual :ticket:**](https://anaclara-gf.github.io/SAP005-midterm-hackaton/src/) 
+[**Conheça o Museu Virtual :ticket:**](https://museu-virtual.herokuapp.com/) 
 > Status do Projeto: Concluído :heavy_check_mark:
 
 ---
@@ -32,7 +32,7 @@ Também é uma ótima oportunidade para professores apresentarem a seus alunos, 
 
 ### 1.1 Como utilizar a aplicação :pencil2:
 
-A aplicação foi pensada para que a própria criança a utilize de forma intuitiva e amigável. Acessando o site do [Museu Virtual](https://anaclara-gf.github.io/SAP005-midterm-hackaton/src/) a criança se deparará com a página inicial e um campo para preencher com seu nome. Feito isso, poderá clicar no botão indicado para iniciar o seu tour virtual.
+A aplicação foi pensada para que a própria criança a utilize de forma intuitiva e amigável. Acessando o site do [Museu Virtual](https://museu-virtual.herokuapp.com/) a criança se deparará com a página inicial e um campo para preencher com seu nome. Feito isso, poderá clicar no botão indicado para iniciar o seu tour virtual.
 
 **:art: GALERIA**
 >Na página da galeria do Museu Virtual, a criança será apresentada ao acervo de obras que foram selecionadas visando a apresentar um panorama da cultura nacional.
